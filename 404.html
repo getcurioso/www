@@ -3,22 +3,26 @@
 
 <head>
   <title>Curio TCG</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<script>
-  const header = document.getElementById('header h1');
-  const message = document.getElementById('header p');
-  message.innerHTML = header.innerHTML.replace('{PATH}', path);
-  if (window.location.pathname.startsWith('/app')) {
-    const path = window.location.pathname.replace('/app/', '')
-    window.location.href = `curiotcg://app/${path}`;
-    header.innerHTML = 'Opening in app';
-    message.innerHTML = `If you are not redirected automatically, <a href="curiotcg://app/${path}">click here</a>.`;
-  }
-</script>
 <body>
-  <div id="header">
-    <h1>404 Not Found</h1>
-    <p>The requested URL '{PATH}' was not found on this server.</p>
+  <div id="header" style="text-align: center; padding-top: 50px;">
+    <img src="assets/logo.png" alt="Curio TCG Logo" style="height: 60px;">
+    <h1 style="margin-top: 50px;">404 Not Found</h1>
+    <p>The requested URL <code style="background-color: #eee; border-radius: 4px; padding: 3px;">{PATH}</code> was not found on this server.</p>
   </div>
+  <script>
+    (function init() {
+      const header = document.querySelector('#header h1');
+      const message = document.querySelector('#header p');
+      const path = window.location.pathname.replace('/app/', '')
+      message.innerHTML = message.innerHTML.replace('{PATH}', path);
+      if (window.location.pathname.startsWith('/app')) {
+        window.location.href = `curiotcg://app/${path}`;
+        header.innerHTML = 'Opening in app';
+        message.innerHTML = `If you are not redirected automatically, <a href="curiotcg://app/${path}">click here</a>.`;
+      }
+    })();
+  </script>
 </body>
 </html>
