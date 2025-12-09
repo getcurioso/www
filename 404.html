@@ -18,9 +18,9 @@
       const path = window.location.pathname.replace('/app/', '')
       message.innerHTML = message.innerHTML.replace('{PATH}', path);
       if (window.location.pathname.startsWith('/app')) {
-        window.location.href = `curiotcg://app/${path}`;
+        window.location.href = `curiotcg://${path}`;
         header.innerHTML = 'Opening in app';
-        message.innerHTML = `If you are not redirected automatically, <a href="curiotcg://app/${path}">click here</a>.`;
+        message.innerHTML = `If you are not redirected automatically, <a href="curiotcg://${path}">click here</a>.`;
       }
     })();
   </script>
