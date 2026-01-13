@@ -2,24 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{> head}}
   <title>Curio TCG - Terms of Service</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="shortcut icon" href="assets/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Curio" />
-  <link rel="manifest" href="site.webmanifest" />
+  <meta name="description" content="The rules for using Curio TCG">
 </head>
 
 <body>
-  <div class="hero">
-    <div class="container">
-      <div class="logo">
-        <img src="assets/logo.png" alt="Curio TCG Logo" style="height: 80px;">
-      </div>
+  {{> header}}
       <h1>Terms of Service — Curio TCG</h1>
       <p class="tagline">The rules for using Curio TCG</p>
     </div>
@@ -29,8 +18,8 @@
     <div class="container" style="max-width: 900px;">
       <h2>1. Acceptance of Terms</h2>
       <p>
-        These Terms of Service (“Terms”) govern your access to and use of Curio TCG (“Curio TCG”, “we”, “us”, or
-        “our”) and our mobile applications, website, and related services (collectively, the “Service”).
+        These Terms of Service ("Terms") govern your access to and use of Curio TCG ("Curio TCG", "we", "us", or
+        "our") and our mobile applications, website, and related services (collectively, the "Service").
       </p>
       <p>
         By creating an account, accessing, or using the Service, you agree to be bound by these Terms. If you do not
@@ -70,7 +59,7 @@
       <h2>5. User Content</h2>
       <p>
         The Service may allow you to upload, store, or share content, including collection data, binder names, card
-        images, marketplace listings, and messages (“User Content”).
+        images, marketplace listings, and messages ("User Content").
       </p>
       <ul>
         <li>You retain ownership of your User Content.</li>
@@ -151,7 +140,7 @@
 
       <h2>12. Disclaimers</h2>
       <p>
-        The Service is provided on an “as is” and “as available” basis, without warranties of any kind, whether express
+        The Service is provided on an "as is" and "as available" basis, without warranties of any kind, whether express
         or implied. We do not warrant that the Service will be uninterrupted, error-free, secure, or free from
         defects.
       </p>
@@ -175,7 +164,7 @@
       <h2>14. Changes to the Service and to These Terms</h2>
       <p>
         We may modify or discontinue parts of the Service at any time. We may also update these Terms from time to
-        time. When we make material changes, we will update the “Last Updated” date below and may provide additional
+        time. When we make material changes, we will update the "Last Updated" date below and may provide additional
         notice within the app or on the website.
       </p>
       <p>
@@ -200,18 +189,7 @@
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="footer-links">
-        <a href="/">Home</a>
-        <a href="privacy">Privacy Policy</a>
-        <a href="terms">Terms of Service</a>
-      </div>
-      <div class="copyright">
-        © 2025 Curio TCG. All rights reserved.
-      </div>
-    </div>
-  </footer>
+  {{> footer}}
 </body>
 
 </html>

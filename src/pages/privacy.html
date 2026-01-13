@@ -2,24 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{> head}}
   <title>Curio TCG - Privacy Policy</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="shortcut icon" href="assets/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Curio" />
-  <link rel="manifest" href="site.webmanifest" />
+  <meta name="description" content="How Curio TCG collects, uses and protects personal data">
 </head>
 
 <body>
-  <div class="hero">
-    <div class="container">
-      <div class="logo">
-        <img src="assets/logo.png" alt="Curio TCG Logo" style="height: 80px;">
-      </div>
+  {{> header}}
       <h1>Privacy Policy — Curio TCG</h1>
       <p class="tagline">How Curio TCG collects, uses and protects personal data</p>
     </div>
@@ -163,7 +152,7 @@
         We may need to verify your identity before processing your request.
       </p>
 
-      <h2>8. Children’s Privacy</h2>
+      <h2>8. Children's Privacy</h2>
       <p>
         Curio TCG is not intended for children under the minimum age required by applicable law (for example, 13 or 16
         years old, depending on jurisdiction). We do not knowingly collect personal information from children
@@ -188,7 +177,7 @@
       <h2>11. Changes to This Privacy Policy</h2>
       <p>
         We may update this Privacy Policy from time to time. When we make material changes, we will update the
-        “Last Updated” date below and may provide additional notice within the app or on the website.
+        "Last Updated" date below and may provide additional notice within the app or on the website.
       </p>
       <p><strong>Last Updated:</strong> 2025-12-08</p>
 
@@ -210,18 +199,7 @@
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="footer-links">
-        <a href="/">Home</a>
-        <a href="privacy">Privacy Policy</a>
-        <a href="terms">Terms of Service</a>
-      </div>
-      <div class="copyright">
-        © 2025 Curio TCG. All rights reserved.
-      </div>
-    </div>
-  </footer>
+  {{> footer}}
 </body>
 
 </html>

@@ -1,0 +1,13 @@
+{
+  "name": "curiotcg-website",
+  "version": "1.0.0",
+  "description": "Landing page for Curio TCG",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "python3 -m http.server 8000 -d dist",
+    "dev": "node build.js && python3 -m http.server 8000 -d dist"
+  },
+  "keywords": ["curiotcg", "pokemon", "tcg", "trading-cards"],
+  "license": "UNLICENSED",
+  "private": true
+}

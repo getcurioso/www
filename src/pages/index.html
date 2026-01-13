@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{> head}}
   <title>Curio TCG - Your Ultimate Pokemon Trading Card Game Collection Manager</title>
   <meta name="description" content="Organize, trade, and showcase your Pokemon trading card collection with powerful tools designed for serious collectors.">
   
@@ -20,32 +19,10 @@
   <meta name="twitter:title" content="Curio TCG - Your Ultimate Pokemon Trading Card Game Collection Manager">
   <meta name="twitter:description" content="Organize, trade, and showcase your Pokemon trading card collection with powerful tools designed for serious collectors.">
   <meta name="twitter:image" content="https://curiotcg.app/assets/og-image.jpg">
-  
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-  <link rel="shortcut icon" href="/assets/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Curio" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NPRDE64NG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-1NPRDE64NG');
-  </script>
-  <script src="/script.js" defer></script>
 </head>
 
 <body>
-  <div class="hero">
-    <div class="container">
-      <div class="logo">
-        <img src="/assets/logo.png" alt="Curio TCG Logo" style="height: 80px;">
-      </div>
+  {{> header}}
       <h1>Curio TCG</h1>
       <p class="tagline">Your ultimate Pokemon Trading Card Game collection manager</p>
       <p style="font-size: 1.1em; max-width: 700px; margin: 0 auto;">Organize, trade, and showcase your trading card
@@ -151,18 +128,7 @@
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="footer-links">
-        <a href="privacy">Privacy Policy</a>
-        <a href="terms">Terms of Service</a>
-        <a href="contact">Contact</a>
-      </div>
-      <div class="copyright">
-        © 2025 Curio TCG. All rights reserved.
-      </div>
-    </div>
-  </footer>
+  {{> footer}}
 </body>
 
 </html>
