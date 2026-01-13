@@ -1,6 +1,7 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Curio TCG",
+  "short_name": "Curio",
+  "description": "Your ultimate Pokemon Trading Card Game collection manager",
   "icons": [
     {
       "src": "/assets/web-app-manifest-192x192.png",
