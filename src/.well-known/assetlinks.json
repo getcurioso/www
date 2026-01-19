@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.curiotcg.app",
+      "sha256_cert_fingerprints": [
+        "C7:78:5B:2B:91:14:EA:4F:D4:81:13:2D:CC:29:5E:E3:7D:3A:B4:0A:85:A6:71:BA:E1:5D:1C:44:CD:86:B1:58"
+      ]
+    }
+  }
+]

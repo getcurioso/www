@@ -26,7 +26,7 @@ const STATIC_FILES = [
   'site.webmanifest',
   '404.html',
 ];
-const STATIC_DIRS = ['assets'];
+const STATIC_DIRS = ['assets', '.well-known'];
 
 // Root files to copy (GitHub Pages config)
 const ROOT_FILES = ['CNAME'];
