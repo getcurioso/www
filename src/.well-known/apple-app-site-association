@@ -1,0 +1,20 @@
+{
+   "applinks": {
+      "apps": [],
+      "details": [
+         {
+            "appID": "6P3Q87DUZF.app.curiotcg.app",
+            "paths": [
+               "/profile/*",
+               "/binders/*",
+               "/slabs/*"
+            ]
+         }
+      ]
+   },
+   "webcredentials": {
+      "apps": [
+         "6P3Q87DUZF.app.curiotcg.app"
+      ]
+   }
+}
