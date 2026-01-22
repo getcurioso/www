@@ -5,9 +5,7 @@
          {
             "appID": "6P3Q87DUZF.app.curiotcg.app",
             "paths": [
-               "/profile/*",
-               "/binders/*",
-               "/slabs/*"
+               "/app/*"
             ]
          }
       ]
